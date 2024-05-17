@@ -4,7 +4,7 @@ namespace Ecohub.Repository
 {
     public interface IUsuarioRepository
     {
-        public void Add(Usuario user);
-        public List<Usuario> GetAll();
+        public void Add(UsuarioModel user);
+        public List<UsuarioModel> GetAll();
     }
 }

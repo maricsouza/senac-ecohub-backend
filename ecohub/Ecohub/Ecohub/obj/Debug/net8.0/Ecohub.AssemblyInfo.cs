@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ecohub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30175fdf26c92c5ca58f059d3b0136465c4e0306")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+611835ad1833ad030a4cffea2d30727ae2fd66de")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ecohub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ecohub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

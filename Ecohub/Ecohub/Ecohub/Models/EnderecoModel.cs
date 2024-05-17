@@ -1,6 +1,6 @@
 ﻿namespace Ecohub.Models
 {
-    public class Endereco
+    public class EnderecoModel
     {
     }
 }

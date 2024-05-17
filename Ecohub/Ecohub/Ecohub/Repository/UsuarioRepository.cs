@@ -7,13 +7,13 @@ namespace Ecohub.Repository
     {
      
         private readonly AppDbContext _context = new AppDbContext();
-        public void Add(Usuario user)
+        public void Add(UsuarioModel user)
         {
             _context.Usuarios.Add(user);
             _context.SaveChanges();
         }
 
-        public List<Usuario> GetAll()
+        public List<UsuarioModel> GetAll()
         {
             throw new NotImplementedException();
         }

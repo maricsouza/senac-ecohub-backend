@@ -2,7 +2,7 @@
 
 namespace Ecohub.Models
 {
-    public class Material
+    public class MaterialModel
     {
         public int id { get; set; }
         public string Nome { get; set; }
