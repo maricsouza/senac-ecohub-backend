@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\ecohub\\Ecohub\\Ecohub\\Ecohub.csproj": {}
+    "C:\\Users\\Raian\\Source\\Repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\ecohub\\Ecohub\\Ecohub\\Ecohub.csproj": {
+    "C:\\Users\\Raian\\Source\\Repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
+        "projectUniqueName": "C:\\Users\\Raian\\Source\\Repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
         "projectName": "Ecohub",
-        "projectPath": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
+        "projectPath": "C:\\Users\\Raian\\Source\\Repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
         "packagesPath": "C:\\Users\\Raian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\ecohub\\Ecohub\\Ecohub\\obj\\",
+        "outputPath": "C:\\Users\\Raian\\Source\\Repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Microsoft visual studio\\Shared\\NuGetPackages"
@@ -50,9 +50,33 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.6.1, )"
             }
           },
           "imports": [

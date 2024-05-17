@@ -1,6 +1,14 @@
+using Ecohub.Context;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+string mysqlConnect = builder.Configuration.GetConnectionString("Connection");
+
+builder.Services.AddDbContextPool<AppDbContext>(options =>
+    options.UseMySql(mysqlConnect, ServerVersion.AutoDetect(mysqlConnect)));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
