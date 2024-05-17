@@ -1,15 +1,16 @@
 using Ecohub.Context;
 using Ecohub.Repository;
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-string mysqlConnect = builder.Configuration.GetConnectionString("Connection");
+//string mysqlConnect = builder.Configuration.GetConnectionString("Connection");
 
-builder.Services.AddDbContextPool<AppDbContext>(options =>
-    options.UseMySql(mysqlConnect, ServerVersion.AutoDetect(mysqlConnect)));
+//builder.Services.AddDbContextPool<AppDbContext>(options =>
+//    options.UseMySql(mysqlConnect, ServerVersion.AutoDetect(mysqlConnect)));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -17,6 +18,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+
 
 var app = builder.Build();
 

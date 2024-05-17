@@ -15,7 +15,7 @@ namespace Ecohub.Repository
 
         public List<UsuarioModel> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Usuarios.ToList();
         }
     }
 }
