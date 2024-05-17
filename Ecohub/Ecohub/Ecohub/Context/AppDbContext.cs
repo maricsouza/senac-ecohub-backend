@@ -10,8 +10,11 @@ namespace Ecohub.Context
         {
         }
 
+        public AppDbContext(){ }
+
         public DbSet<Material> Material { get; set; } 
 
+        public DbSet<Usuario> Usuarios { get; set; }
          
     }
 }

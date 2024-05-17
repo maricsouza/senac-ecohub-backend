@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Ecohub.Context;
 using Ecohub.Models;
+using Ecohub.Repository;
 
 namespace Ecohub.Controllers
 {
@@ -15,6 +16,7 @@ namespace Ecohub.Controllers
     public class MaterialsController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly IUsuarioRepository _usuarioRepository;
 
         public MaterialsController(AppDbContext context)
         {
@@ -82,6 +84,15 @@ namespace Ecohub.Controllers
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetMaterial", new { id = material.id }, material);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<Usuario>> PostUser(Usuario usuario)
+        {
+            _usuarioRepository.Add(usuario);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("Post", new { id = usuario.Id }, usuario);
         }
 
         // DELETE: api/Materials/5
