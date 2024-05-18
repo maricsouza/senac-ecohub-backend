@@ -1,4 +1,4 @@
-﻿namespace Ecohub.ViewModel
+﻿namespace Ecohub.Models.ViewModel
 {
     public class UsuarioViewModel
     {

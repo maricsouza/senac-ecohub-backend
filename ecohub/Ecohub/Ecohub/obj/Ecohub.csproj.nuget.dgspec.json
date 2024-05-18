@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Raian\\Source\\Repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj": {}
+    "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Raian\\Source\\Repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj": {
+    "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raian\\Source\\Repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
+        "projectUniqueName": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
         "projectName": "Ecohub",
-        "projectPath": "C:\\Users\\Raian\\Source\\Repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
+        "projectPath": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
         "packagesPath": "C:\\Users\\Raian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raian\\Source\\Repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\obj\\",
+        "outputPath": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Microsoft visual studio\\Shared\\NuGetPackages"

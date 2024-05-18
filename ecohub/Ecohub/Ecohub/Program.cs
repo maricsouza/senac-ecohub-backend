@@ -1,7 +1,5 @@
-using Ecohub.Context;
-using Ecohub.Repository;
-using Microsoft.EntityFrameworkCore;
-using System.Configuration;
+using Ecohub.Infra.Repository;
+using Ecohub.Infra.Repository.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 

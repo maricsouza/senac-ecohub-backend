@@ -4,7 +4,7 @@ using System.Configuration;
 using System.Collections.Specialized;
 using System;
 
-namespace Ecohub.Context
+namespace Ecohub.Infra.Context
 {
     public class AppDbContext : DbContext
     {
@@ -13,11 +13,11 @@ namespace Ecohub.Context
         string mysqlConnect = "Server = localhost; Port=3306;Database=ECOHUB;Uid=root;Pwd=MySqlFacul;Persist Security Info=False; Connect Timeout = 300";
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseMySql(mysqlConnect, ServerVersion.AutoDetect(mysqlConnect));
-        
 
-        public DbSet<MaterialModel> Material { get; set; } 
+
+        public DbSet<MaterialModel> Material { get; set; }
 
         public DbSet<UsuarioModel> Usuarios { get; set; }
-         
+
     }
 }

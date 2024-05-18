@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BCSlyzhS0ZOlz7SVhRbvoPVWzTFI4EA1M8izlpmpisNleG+5+TIE5oJBFhYEQPiioDgoex9Q2JwrBq5mv6/DCw==",
+  "dgSpecHash": "gqfcZnrAUaLbSQSaYMuLoB+9jRanvBnnRiryVelvnoWYnhtmDUWND5it96tRK59ZDdCF4NzAMgrOXorq947AAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Raian\\Source\\Repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
+  "projectFilePath": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raian\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Raian\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

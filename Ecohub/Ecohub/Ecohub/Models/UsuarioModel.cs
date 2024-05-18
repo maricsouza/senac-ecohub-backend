@@ -35,5 +35,15 @@ namespace Ecohub.Models
             Email = email;
             Senha = senha;
         }
+
+        public UsuarioModel(string id, string nome, string cPF, DateTime dataNascimento, string email, string senha)
+        {
+            Id = id;
+            Nome = nome;
+            CPF = cPF;
+            DataNascimento = dataNascimento;
+            Email = email;
+            Senha = senha;
+        }
     }
 }
