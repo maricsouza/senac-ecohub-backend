@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\models\\viewmodel\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\models\\viewmodel\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\infrastructure\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\infrastructure\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\infrastructure\\repositories\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\infrastructure\\repositories\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Infrastructure\\Repositories\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Ecohub\\Infrastructure\\Repositories\\Interfaces\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Infrastructure\\Repositories\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeToolTip": "Ecohub\\Infrastructure\\Repositories\\Interfaces\\IUsuarioRepository.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAADwvwsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T14:01:04.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Models\\ViewModel\\UsuarioViewModel.cs",
+              "RelativeDocumentMoniker": "Ecohub\\Models\\ViewModel\\UsuarioViewModel.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Models\\ViewModel\\UsuarioViewModel.cs",
+              "RelativeToolTip": "Ecohub\\Models\\ViewModel\\UsuarioViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T04:31:28.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\appsettings.json",
+              "RelativeDocumentMoniker": "Ecohub\\appsettings.json",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\appsettings.json",
+              "RelativeToolTip": "Ecohub\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-17T04:25:49.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Infrastructure\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Ecohub\\Infrastructure\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Infrastructure\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Ecohub\\Infrastructure\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T04:05:06.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Ecohub\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Ecohub\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T04:04:43.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Program.cs",
+              "RelativeDocumentMoniker": "Ecohub\\Program.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Program.cs",
+              "RelativeToolTip": "Ecohub\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T04:02:36.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Infrastructure\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Ecohub\\Infrastructure\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Infrastructure\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "Ecohub\\Infrastructure\\Context\\AppDbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAD4vwwAAACYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T04:01:04.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioModel.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Models\\UsuarioModel.cs",
+              "RelativeDocumentMoniker": "Ecohub\\Models\\UsuarioModel.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Models\\UsuarioModel.cs",
+              "RelativeToolTip": "Ecohub\\Models\\UsuarioModel.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAIwB4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T03:52:50.003Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

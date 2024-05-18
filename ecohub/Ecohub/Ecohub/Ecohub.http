@@ -1,0 +1,6 @@
+@Ecohub_HostAddress = http://localhost:5191
+
+GET {{Ecohub_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
