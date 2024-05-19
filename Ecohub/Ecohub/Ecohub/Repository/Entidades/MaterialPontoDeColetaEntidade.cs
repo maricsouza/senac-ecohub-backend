@@ -1,6 +1,6 @@
-﻿namespace Ecohub.Models
+﻿namespace Ecohub.Repository.Entidades
 {
-    public class MaterialPontoDeColetaModel
+    public class MaterialPontoDeColetaEntidade
     {
         public string PontoDeColetaId { get; set; }
         public int MeterialId { get; set; }

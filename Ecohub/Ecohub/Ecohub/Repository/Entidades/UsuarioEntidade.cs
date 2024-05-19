@@ -2,10 +2,10 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Ecohub.Models
+namespace Ecohub.Repository.Entidades
 {
     [Table("USUARIOS")]
-    public class UsuarioModel
+    public class UsuarioEntidade
     {
         [Key]
         public string Id { get; set; } // GUID
@@ -26,7 +26,7 @@ namespace Ecohub.Models
         [Column("SENHA")]
         public string Senha { get; set; }
 
-        public UsuarioModel( string nome, string cPF, DateTime dataNascimento, string email, string senha)
+        public UsuarioEntidade(string nome, string cPF, DateTime dataNascimento, string email, string senha)
         {
             Id = Guid.NewGuid().ToString();
             Nome = nome;
@@ -36,7 +36,7 @@ namespace Ecohub.Models
             Senha = senha;
         }
 
-        public UsuarioModel(string id, string nome, string cPF, DateTime dataNascimento, string email, string senha)
+        public UsuarioEntidade(string id, string nome, string cPF, DateTime dataNascimento, string email, string senha)
         {
             Id = id;
             Nome = nome;

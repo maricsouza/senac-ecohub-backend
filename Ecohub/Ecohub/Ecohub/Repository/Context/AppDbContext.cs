@@ -1,8 +1,8 @@
-﻿using Ecohub.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Configuration;
 using System.Collections.Specialized;
 using System;
+using Ecohub.Repository.Entidades;
 
 namespace Ecohub.Infra.Context
 {
@@ -15,9 +15,9 @@ namespace Ecohub.Infra.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseMySql(mysqlConnect, ServerVersion.AutoDetect(mysqlConnect));
 
 
-        public DbSet<MaterialModel> Material { get; set; }
+        public DbSet<MaterialEntidade> Material { get; set; }
 
-        public DbSet<UsuarioModel> Usuarios { get; set; }
+        public DbSet<UsuarioEntidade> Usuarios { get; set; }
 
     }
 }

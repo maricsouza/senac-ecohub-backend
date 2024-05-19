@@ -1,8 +1,8 @@
 ﻿using System.Reflection.Metadata.Ecma335;
 
-namespace Ecohub.Models
+namespace Ecohub.Repository.Entidades
 {
-    public class MaterialModel
+    public class MaterialEntidade
     {
         public int id { get; set; }
         public string Nome { get; set; }

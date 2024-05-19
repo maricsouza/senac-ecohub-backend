@@ -1,6 +1,7 @@
-﻿using Ecohub.Infra.Repository.Interfaces;
+﻿using Ecohub.Controllers.Models.Entrada;
 using Ecohub.Models;
-using Ecohub.Models.ViewModel;
+using Ecohub.Repository.Entidades;
+using Ecohub.Repository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
 
@@ -21,7 +22,7 @@ namespace Ecohub.Controllers
         public IActionResult Add(UsuarioViewModel user)
         {
           
-            var userAdd = new UsuarioModel(user.Nome, user.CPF, user.DataNascimento, user.Email, user.Senha);
+            var userAdd = new UsuarioEntidade(user.Nome, user.CPF, user.DataNascimento, user.Email, user.Senha);
             _usuarioRepository.Add(userAdd);
             return Ok();
         }
