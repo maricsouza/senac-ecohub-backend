@@ -1,5 +1,5 @@
-using Ecohub.Infra.Repository;
-using Ecohub.Infra.Repository.Interfaces;
+using Ecohub.Repository;
+using Ecohub.Repository.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 

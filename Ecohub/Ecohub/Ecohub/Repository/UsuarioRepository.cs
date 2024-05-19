@@ -1,34 +1,34 @@
-﻿using Ecohub.Infra.Context;
-using Ecohub.Infra.Repository.Interfaces;
-using Ecohub.Models;
-using Ecohub.Models.ViewModel;
+﻿using Ecohub.Controllers.Models.Entrada;
+using Ecohub.Infra.Context;
+using Ecohub.Repository.Entidades;
+using Ecohub.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Ecohub.Infra.Repository
+namespace Ecohub.Repository
 {
     public class UsuarioRepository : IUsuarioRepository
     {
 
         private readonly AppDbContext _context = new AppDbContext();
-        public void Add(UsuarioModel user)
+        public void Add(UsuarioEntidade user)
         {
             _context.Usuarios.Add(user);
             _context.SaveChanges();
         }
 
-        public async Task<UsuarioModel> Get(string userId)
+        public async Task<UsuarioEntidade> Get(string userId)
         {
             return await _context.Usuarios.FindAsync(userId);
         }
 
-        public async Task<List<UsuarioModel>> GetAll()
+        public async Task<List<UsuarioEntidade>> GetAll()
         {
             return await _context.Usuarios.ToListAsync();
         }
 
         public void Update(UsuarioViewModel user, string userId)
         {
-            UsuarioModel userEdit = new UsuarioModel(
+            UsuarioEntidade userEdit = new UsuarioEntidade(
                 userId,
                 user.Nome,
                 user.CPF,
