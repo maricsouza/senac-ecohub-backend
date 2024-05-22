@@ -4,7 +4,7 @@ using Ecohub.Repository.Entidades;
 using Ecohub.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Ecohub.Repository
+namespace Ecohub.Repository.Repositories
 {
     public class UsuarioRepository : IUsuarioRepository
     {
@@ -23,7 +23,7 @@ namespace Ecohub.Repository
 
         public async Task<List<UsuarioEntidade>> GetAll()
         {
-            return await _context.Usuarios.ToListAsync();
+            return _context.Usuarios.ToList();
         }
 
         public void Update(UsuarioViewModel user, string userId)

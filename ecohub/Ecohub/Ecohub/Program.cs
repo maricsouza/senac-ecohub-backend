@@ -1,5 +1,7 @@
-using Ecohub.Repository;
 using Ecohub.Repository.Interfaces;
+using Ecohub.Repository.Repositories;
+using Ecohub.Service;
+using Ecohub.Service.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddTransient<IUsuarioService, UsuarioService>();
 
 
 var app = builder.Build();
