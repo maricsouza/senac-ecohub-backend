@@ -23,7 +23,7 @@ namespace Ecohub.Repository
 
         public async Task<List<UsuarioEntidade>> GetAll()
         {
-            return await _context.Usuarios.ToListAsync();
+            return _context.Usuarios.ToList();
         }
 
         public void Update(UsuarioViewModel user, string userId)
