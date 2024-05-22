@@ -4,7 +4,7 @@ using Ecohub.Repository.Entidades;
 using Ecohub.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Ecohub.Repository
+namespace Ecohub.Repository.Repositories
 {
     public class UsuarioRepository : IUsuarioRepository
     {

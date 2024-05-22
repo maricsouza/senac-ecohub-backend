@@ -11,5 +11,7 @@ namespace Ecohub.Repository.Entidades
         public string? Numero { get; set; }
         public EnderecoEntidade Endereco { get; set; }
         public string UsuarioId { get; set; }
+
+       
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Ecohub.Infra.Context;
 using Ecohub.Repository.Interfaces;
 
-namespace Ecohub.Repository
+namespace Ecohub.Repository.Repositories
 {
     public class PontoColetaRepository : IPontoColetaRepository
     {

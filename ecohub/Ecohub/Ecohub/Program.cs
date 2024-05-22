@@ -1,5 +1,5 @@
-using Ecohub.Repository;
 using Ecohub.Repository.Interfaces;
+using Ecohub.Repository.Repositories;
 using Ecohub.Service;
 using Ecohub.Service.Interfaces;
 
