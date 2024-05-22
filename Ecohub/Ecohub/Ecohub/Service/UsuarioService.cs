@@ -11,7 +11,7 @@ namespace Ecohub.Service
 
         public UsuarioService(IUsuarioRepository usuarioRepository)
         {
-            _usuarioRepository = usuarioRepository;
+            _usuarioRepository = usuarioRepository ?? throw new ArgumentException();
         }
 
         public void Adicionar(UsuarioViewModel user)

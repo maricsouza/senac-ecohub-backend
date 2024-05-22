@@ -19,5 +19,7 @@ namespace Ecohub.Infra.Context
 
         public DbSet<UsuarioEntidade> Usuarios { get; set; }
 
+        public DbSet<PontoDeColetaEntidade> PontoColeta { get; set; }
+
     }
 }
