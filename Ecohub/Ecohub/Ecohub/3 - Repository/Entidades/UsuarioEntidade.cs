@@ -8,6 +8,7 @@ namespace Ecohub.Repository.Entidades
     public class UsuarioEntidade
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Id { get; set; } // GUID
 
         [Column("NOME")]
