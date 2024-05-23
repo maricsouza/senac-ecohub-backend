@@ -21,9 +21,9 @@ namespace Ecohub.Service
             return material;
         }
 
-        public Task<MaterialEntidade> Buscar(int materialId)
+        public async Task<MaterialEntidade> Buscar(int materialId)
         {
-            var material = _materialRepository.Get(materialId);
+            var material = await _materialRepository.Get(materialId);
             return material;
         }
         public void Adicionar(MaterialViewModel material)
@@ -34,6 +34,7 @@ namespace Ecohub.Service
         public void Atualizar(MaterialViewModel material, int materialId)
         {
             var atualizarMaterial = new MaterialEntidade() {  Nome = material.Nome, Descricao= material.Descricao, Id= materialId };
+            _materialRepository.Update(atualizarMaterial);
         }
 
         public async void Deletar(int materialId)

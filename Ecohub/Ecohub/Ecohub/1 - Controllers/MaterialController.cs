@@ -1,7 +1,4 @@
 using Ecohub.Controllers.Models.Entrada;
-using Ecohub.Controllers.Models.Retorno;
-using Ecohub.Repository.Entidades;
-using Ecohub.Repository.Interfaces;
 using Ecohub.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,37 +15,39 @@ namespace Ecohub.Controllers
             _materialService = material;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> BuscarMateriais() 
-        { 
+        [HttpPost]
+        public IActionResult AdicionarMaterial(MaterialViewModel material)
+        {
+            _materialService.Adicionar(material);
+            return Ok();
+        }
+
+        [HttpGet("/buscarMateriais")]
+        public async Task<IActionResult> BuscarMateriais()
+        {
             var materiais = await _materialService.BuscarTodos();
             return Ok(materiais);
 
         }
 
         [HttpGet]
-        public IActionResult BuscarMaterial(int materialId)
+        public async Task<IActionResult> BuscarMaterial(int materialId)
         {
-            var material = _materialService.Buscar(materialId);
+            var material = await _materialService.Buscar(materialId);
             return Ok(material);
         }
 
-        [HttpPost]
-        public IActionResult AdicionarMaterial (MaterialViewModel material)
-        {
-            _materialService.Adicionar(material);
-            return Ok();
-        }
+ 
 
         [HttpPut]
-        public IActionResult UpdateMaterial (MaterialViewModel material, int materialId)
+        public IActionResult EditarMaterial(MaterialViewModel material, int materialId)
         {
             _materialService.Atualizar(material, materialId);
             return Ok();
         }
 
         [HttpDelete]
-        public IActionResult DeleteMaterial (int materialId)
+        public IActionResult DeletarMaterial (int materialId)
         {
             _materialService.Deletar(materialId);
             return Ok();

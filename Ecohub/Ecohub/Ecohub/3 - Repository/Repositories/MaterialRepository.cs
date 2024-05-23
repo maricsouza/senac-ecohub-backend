@@ -15,7 +15,8 @@ namespace Ecohub._3___Repository.Repositories
 
         public async Task<MaterialEntidade> Get(int materialId)
         {
-            return await _context.Material.FindAsync(materialId);
+            var material=  await _context.Material.FindAsync(materialId) ;
+            return material;
         }
 
         public void Add(MaterialEntidade material)
