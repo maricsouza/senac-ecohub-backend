@@ -1,3 +1,5 @@
+using Ecohub._3___Repository.Interfaces;
+using Ecohub._3___Repository.Repositories;
 using Ecohub.Repository.Interfaces;
 using Ecohub.Repository.Repositories;
 using Ecohub.Service;
@@ -19,6 +21,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddTransient<IUsuarioService, UsuarioService>();
+builder.Services.AddTransient<IMaterialRepository, MaterialRepository>();
+builder.Services.AddTransient<IMaterialService, MaterialService>();
+builder.Services.AddTransient<IPontoColetaRepository, PontoColetaRepository>();
+builder.Services.AddTransient<IPontoColetaService, PontoColetaService>();
 
 
 var app = builder.Build();
