@@ -18,14 +18,10 @@ namespace Ecohub.Controllers
         [HttpPost]
         public IActionResult AdicionarMaterial(MaterialViewModel material)
         {
+
             var response = _materialService.Adicionar(material);
 
-            if(response == null)
-            {
-                return BadRequest(response);
-            }
-
-            return Ok();
+            return Ok(response);
         }
 
         [HttpGet("/buscarMateriais")]

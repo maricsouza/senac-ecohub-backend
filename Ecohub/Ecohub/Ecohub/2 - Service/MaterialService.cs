@@ -29,11 +29,6 @@ namespace Ecohub.Service
         }
         public MaterialResponse Adicionar(MaterialViewModel material)
         {
-            if (string.IsNullOrEmpty(material.Nome))
-            {
-                throw new Exception("O nome do material não pode estar vazio ou nulo.");
-            }
-
             material.Descricao ??= string.Empty;
             
             var incluirMaterial = new MaterialEntidade(){ Nome = material.Nome, Descricao = material.Descricao};
