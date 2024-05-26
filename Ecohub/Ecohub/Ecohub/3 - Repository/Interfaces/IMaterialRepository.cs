@@ -7,7 +7,7 @@ namespace Ecohub._3___Repository.Interfaces
     {
         Task<List<MaterialEntidade>> GetAll();
         Task<MaterialEntidade> Get(int materialId);
-        void Add(MaterialEntidade material);
+        MaterialEntidade Add(MaterialEntidade material);
         void Update(MaterialEntidade material);
         void Delete(MaterialEntidade material);
     }

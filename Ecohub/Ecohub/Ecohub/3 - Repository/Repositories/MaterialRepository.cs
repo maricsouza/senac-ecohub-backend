@@ -15,14 +15,16 @@ namespace Ecohub._3___Repository.Repositories
 
         public async Task<MaterialEntidade> Get(int materialId)
         {
-            var material=  await _context.Material.FindAsync(materialId) ;
+            var material=  await _context.Material.FindAsync(materialId);
             return material;
         }
 
-        public void Add(MaterialEntidade material)
+        public MaterialEntidade Add(MaterialEntidade material)
         {
-            _context.Material.Add(material);
+            var retorno = _context.Material.Add(material);
             _context.SaveChanges();
+            
+            return retorno.Entity;
         }
         public void Update(MaterialEntidade material)
         {

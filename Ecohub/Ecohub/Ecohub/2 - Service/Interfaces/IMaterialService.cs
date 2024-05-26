@@ -6,7 +6,7 @@ namespace Ecohub.Service.Interfaces
 {
 	public interface IMaterialService
 	{
-		void Adicionar(MaterialViewModel material);
+        MaterialResponse Adicionar(MaterialViewModel material);
 		Task<List<MaterialEntidade>> BuscarTodos();
 		Task<MaterialEntidade> Buscar(int materialId);
 		void Atualizar(MaterialViewModel material, int materialId);
