@@ -5,10 +5,10 @@ namespace Ecohub.Repository.Interfaces
 {
     public interface IPontoColetaRepository
     {
-        void Add(PontoDeColetaEntidade user);
-        Task<List<UsuarioEntidade>> GetAll();
-        Task<UsuarioEntidade> Get(string userId);
-        void Update(PontoDeColetaEntidade user, string userId);
-        void Delete(string userId);
+        void Add(PontoDeColetaEntidade pontoColeta);
+        Task<List<PontoDeColetaEntidade>> GetAll();
+        Task<PontoDeColetaEntidade> Get(string pontoColetaId);
+        void Update(PontoDeColetaEntidade pontoColeta);
+        void Delete(PontoDeColetaEntidade pontoColeta);
     }
 }

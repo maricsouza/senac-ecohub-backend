@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\1 - controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\1 - controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\1 - controllers\\models\\entrada\\pontocoletaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\1 - controllers\\models\\entrada\\pontocoletaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\1 - controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\1 - controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\2 - service\\pontocoletaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\2 - service\\pontocoletaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\3 - repository\\entidades\\enderecoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\3 - repository\\entidades\\enderecoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\3 - repository\\entidades\\materialpontodecoletaentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\3 - repository\\entidades\\materialpontodecoletaentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\3 - repository\\entidades\\pontodecoletaentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\3 - repository\\entidades\\pontodecoletaentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|c:\\users\\raian\\source\\repos\\senac-ecohub-backend\\ecohub\\ecohub\\ecohub\\1 - controllers\\pontodecoletacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF14BF5-CE4B-464A-81BA-46B413CFE023}|Ecohub\\Ecohub.csproj|solutionrelative:ecohub\\1 - controllers\\pontodecoletacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,36 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MaterialPontoDeColetaEntidade.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\3 - Repository\\Entidades\\MaterialPontoDeColetaEntidade.cs",
+              "RelativeDocumentMoniker": "Ecohub\\3 - Repository\\Entidades\\MaterialPontoDeColetaEntidade.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\3 - Repository\\Entidades\\MaterialPontoDeColetaEntidade.cs",
+              "RelativeToolTip": "Ecohub\\3 - Repository\\Entidades\\MaterialPontoDeColetaEntidade.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T06:36:22.81Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MaterialController.cs",
-              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\1 - Controllers\\MaterialController.cs",
-              "RelativeDocumentMoniker": "Ecohub\\1 - Controllers\\MaterialController.cs",
-              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\1 - Controllers\\MaterialController.cs",
-              "RelativeToolTip": "Ecohub\\1 - Controllers\\MaterialController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAADEAAAAkAAAA",
+              "DocumentIndex": 2,
+              "Title": "EnderecoEntidade.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\3 - Repository\\Entidades\\EnderecoEntidade.cs",
+              "RelativeDocumentMoniker": "Ecohub\\3 - Repository\\Entidades\\EnderecoEntidade.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\3 - Repository\\Entidades\\EnderecoEntidade.cs",
+              "RelativeToolTip": "Ecohub\\3 - Repository\\Entidades\\EnderecoEntidade.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T15:37:59.109Z",
+              "WhenOpened": "2024-05-26T06:35:42.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\1 - Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Ecohub\\1 - Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\1 - Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Ecohub\\1 - Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAA9wCgAAAAdAAAA",
+              "Title": "PontoColetaService.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\2 - Service\\PontoColetaService.cs",
+              "RelativeDocumentMoniker": "Ecohub\\2 - Service\\PontoColetaService.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\2 - Service\\PontoColetaService.cs",
+              "RelativeToolTip": "Ecohub\\2 - Service\\PontoColetaService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAnwDIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T15:37:56.598Z",
+              "WhenOpened": "2024-05-26T06:34:40.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PontoDeColetaEntidade.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\3 - Repository\\Entidades\\PontoDeColetaEntidade.cs",
+              "RelativeDocumentMoniker": "Ecohub\\3 - Repository\\Entidades\\PontoDeColetaEntidade.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\3 - Repository\\Entidades\\PontoDeColetaEntidade.cs",
+              "RelativeToolTip": "Ecohub\\3 - Repository\\Entidades\\PontoDeColetaEntidade.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T06:33:30.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PontoColetaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\1 - Controllers\\Models\\Entrada\\PontoColetaViewModel.cs",
+              "RelativeDocumentMoniker": "Ecohub\\1 - Controllers\\Models\\Entrada\\PontoColetaViewModel.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\1 - Controllers\\Models\\Entrada\\PontoColetaViewModel.cs",
+              "RelativeToolTip": "Ecohub\\1 - Controllers\\Models\\Entrada\\PontoColetaViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T06:30:45.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PontoDeColetaController.cs",
+              "DocumentMoniker": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\1 - Controllers\\PontoDeColetaController.cs",
+              "RelativeDocumentMoniker": "Ecohub\\1 - Controllers\\PontoDeColetaController.cs",
+              "ToolTip": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\1 - Controllers\\PontoDeColetaController.cs",
+              "RelativeToolTip": "Ecohub\\1 - Controllers\\PontoDeColetaController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T06:29:45.254Z",
               "EditorCaption": ""
             }
           ]

@@ -4,8 +4,10 @@
     "\\Ecohub",
     "\\Ecohub\\Ecohub",
     "\\Ecohub\\Ecohub\\Ecohub",
+    "\\Ecohub\\Ecohub\\Ecohub\\3 - Repository",
+    "\\Ecohub\\Ecohub\\Ecohub\\3 - Repository\\Entidades",
     "\\Ecohub\\Ecohub\\Ecohub\\Controllers"
   ],
-  "SelectedNode": "\\Ecohub\\Ecohub\\Ecohub\\Controllers\\UsuarioController.cs",
+  "SelectedNode": "\\Ecohub\\Ecohub\\Ecohub\\3 - Repository\\Entidades\\EnderecoEntidade.cs",
   "PreviewInSolutionExplorer": false
 }
