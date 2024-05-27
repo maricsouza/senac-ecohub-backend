@@ -17,30 +17,53 @@ namespace Ecohub.Repository.Entidades
         [Column("EMAIL")]
         public string? Email { get; set; }
 
-        //[Column("ENDERECO")]
-        //public EnderecoEntidade Endereco { get; set; }
-
         [Column("IMAGEM")]
         public string Imagem { get; set; }
 
+        [Column("NUMERO")]
+        public string Numero { get; set; }
+
+        [Column("CIDADE")]
+        public string Cidade { get; set; }
+
+        [Column("ESTADO")]
+        public string Estado { get; set; }
+
+        [Column("PONTO_DE_REFERENCIA")]
+        public string? PontoReferencia { get; set; }
+
+        [Column("CEP")]
+        public string CEP { get; set; }
+
         [Column("USUARIO_ID")]
+        [ForeignKey("USUARIO_ID")]
         public string UsuarioId { get; set; }
 
-        public PontoDeColetaEntidade(string id, string nome, string? email, string imagem, string usuarioId)
+        public PontoDeColetaEntidade(string id, string nome, string? email , string imagem, string numero, string cidade, string estado, string? pontoReferencia, string cEP, string usuarioId)
         {
             Id = id;
             Nome = nome;
             Email = email;
             Imagem = imagem;
+            Numero = numero;
+            Cidade = cidade;
+            Estado = estado;
+            PontoReferencia = pontoReferencia;
+            CEP = cEP;
             UsuarioId = usuarioId;
         }
 
-        public PontoDeColetaEntidade(string nome, string? email, string imagem, string usuarioId)
+        public PontoDeColetaEntidade(string nome, string? email, string imagem, string numero, string cidade, string estado, string? pontoReferencia, string cEP, string usuarioId)
         {
             Id = Guid.NewGuid().ToString();
             Nome = nome;
             Email = email;
             Imagem = imagem;
+            Numero = numero;
+            Cidade = cidade;
+            Estado = estado;
+            PontoReferencia = pontoReferencia;
+            CEP = cEP;
             UsuarioId = usuarioId;
         }
     }

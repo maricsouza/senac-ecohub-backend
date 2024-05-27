@@ -11,7 +11,7 @@ namespace Ecohub._1___Controllers
     [Route("api/v1/pontoColeta/[controller]")]
     public class PontoDeColetaController : Controller
     {
-       private readonly IPontoColetaService _pontoColetaService;
+        private readonly IPontoColetaService _pontoColetaService;
 
         public PontoDeColetaController(IPontoColetaService pontoColetaService)
         {
@@ -19,16 +19,17 @@ namespace Ecohub._1___Controllers
         }
 
         [HttpPost]
-        public IActionResult AdicionarPontoColeta(PontoColetaViewModel ponto) {
+        public IActionResult AdicionarPontoColeta(PontoColetaViewModel ponto)
+        {
             _pontoColetaService.Add(ponto);
             return Ok();
-        }
 
+        }
         [HttpGet("/buscarPontosColeta")]
         public async Task<IActionResult> BuscarPontosColeta()
         {
-            var todosPpontos = await _pontoColetaService.GetAll();
-            return Ok(todosPpontos);
+            var todosPontos = await _pontoColetaService.GetAll();
+            return Ok(todosPontos);
         }
 
         [HttpGet]
@@ -53,5 +54,8 @@ namespace Ecohub._1___Controllers
             return Ok();
 
         }
+
     }
 }
+
+

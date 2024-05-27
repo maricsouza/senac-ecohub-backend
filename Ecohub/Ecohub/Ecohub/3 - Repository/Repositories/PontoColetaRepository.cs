@@ -11,6 +11,7 @@ namespace Ecohub.Repository.Repositories
         public void Add(PontoDeColetaEntidade pontoColeta)
         {
            _context.Add(pontoColeta);
+           _context.SaveChanges();
         }
 
         public void Delete(PontoDeColetaEntidade pontoColeta)
@@ -22,12 +23,13 @@ namespace Ecohub.Repository.Repositories
         public async Task<PontoDeColetaEntidade> Get(string pontoColetaId)
         {
             var pontoColeta = await _context.PontoColeta.FindAsync(pontoColetaId);
+
             return pontoColeta;
         }
 
         public async Task<List<PontoDeColetaEntidade>> GetAll()
         {
-            var pontosColeta = _context.PontoColeta.ToList();
+            var pontosColeta =  _context.PontoColeta.ToList();
             return pontosColeta;
         }
 

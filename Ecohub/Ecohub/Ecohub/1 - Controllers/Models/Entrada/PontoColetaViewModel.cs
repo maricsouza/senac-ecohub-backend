@@ -6,13 +6,14 @@ namespace Ecohub._1___Controllers.Models.Entrada
     public class PontoColetaViewModel
     {
         public string Nome { get; set; }
-
         public string? Email { get; set; }
-
-        public EnderecoEntidade? Endereco { get; set; }
-
         public string Imagem { get; set; }
-
+        public string Numero { get; set; }
+        public string Cidade { get; set; }
+        public string Estado { get; set; }
+        public string? PontoReferencia { get; set; }
+        public string CEP { get; set; }
         public string UsuarioId { get; set; }
     }
+
 }
