@@ -500,4 +500,6 @@ paket-files/
 /ecohub/Ecohub/.vs/Ecohub/DesignTimeBuild/.dtbcache.v2
 /.vs/slnx.sqlite
 /ecohub/Ecohub/Ecohub/obj/Release/net8.0/Ecohub.AssemblyInfo.cs
-/ecohub/Ecohub/Ecohub/obj/Release/net8.0/Ecohub.AssemblyInfoInputs.cache
+/.vs/senac-ecohub-backend/v17/.wsuo
+/.vs/senac-ecohub-backend/v17/DocumentLayout.json
+/.vs/VSWorkspaceState.json
