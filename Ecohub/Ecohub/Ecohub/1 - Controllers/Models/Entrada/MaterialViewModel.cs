@@ -10,5 +10,6 @@ namespace Ecohub.Controllers.Models.Entrada
 
         public string Descricao { get; set; }
 
+
     }
 }

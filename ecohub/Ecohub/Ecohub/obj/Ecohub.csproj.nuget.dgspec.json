@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj": {}
+    "C:\\Users\\souza\\OneDrive\\Desktop\\souza\\faculdade\\codes\\5SSMS\\PI\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj": {
+    "C:\\Users\\souza\\OneDrive\\Desktop\\souza\\faculdade\\codes\\5SSMS\\PI\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
+        "projectUniqueName": "C:\\Users\\souza\\OneDrive\\Desktop\\souza\\faculdade\\codes\\5SSMS\\PI\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
         "projectName": "Ecohub",
-        "projectPath": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
-        "packagesPath": "C:\\Users\\Raian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raian\\source\\repos\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\obj\\",
+        "projectPath": "C:\\Users\\souza\\OneDrive\\Desktop\\souza\\faculdade\\codes\\5SSMS\\PI\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\Ecohub.csproj",
+        "packagesPath": "C:\\Users\\souza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\souza\\OneDrive\\Desktop\\souza\\faculdade\\codes\\5SSMS\\PI\\senac-ecohub-backend\\Ecohub\\Ecohub\\Ecohub\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\Microsoft visual studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Raian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\souza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -98,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
