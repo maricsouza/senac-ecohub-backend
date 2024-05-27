@@ -27,6 +27,7 @@ builder.Services.AddTransient<IPontoColetaRepository, PontoColetaRepository>();
 builder.Services.AddTransient<IPontoColetaService, PontoColetaService>();
 
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

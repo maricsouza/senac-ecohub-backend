@@ -8,29 +8,35 @@ namespace Ecohub.Repository.Repositories
     {
         private readonly AppDbContext _context = new AppDbContext();
 
-        public void Add(PontoDeColetaEntidade pontoDeColeta)
+        public void Add(PontoDeColetaEntidade pontoColeta)
         {
-            throw new NotImplementedException();
+           _context.Add(pontoColeta);
+           _context.SaveChanges();
         }
 
-        public void Delete(string pontoDeColetaId)
+        public void Delete(PontoDeColetaEntidade pontoColeta)
         {
-            throw new NotImplementedException();
+            _context.PontoColeta.Remove(pontoColeta);
+            _context.SaveChanges();
         }
 
-        public Task<UsuarioEntidade> Get(string userId)
+        public async Task<PontoDeColetaEntidade> Get(string pontoColetaId)
         {
-            throw new NotImplementedException();
+            var pontoColeta = await _context.PontoColeta.FindAsync(pontoColetaId);
+
+            return pontoColeta;
         }
 
-        public Task<List<UsuarioEntidade>> GetAll()
+        public async Task<List<PontoDeColetaEntidade>> GetAll()
         {
-            throw new NotImplementedException();
+            var pontosColeta =  _context.PontoColeta.ToList();
+            return pontosColeta;
         }
 
-        public void Update(PontoDeColetaEntidade user, string userId)
+        public void Update(PontoDeColetaEntidade pontoColeta)
         {
-            throw new NotImplementedException();
+            _context.PontoColeta.Update(pontoColeta);
+            _context.SaveChanges();
         }
     }
 }
