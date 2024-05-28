@@ -28,9 +28,9 @@ namespace Ecohub.Service
                pontoColeta.CEP,
                pontoColeta.Imagem,
                pontoColeta.UsuarioId
-               );      
+               );
 
-            _pontoColetaRepository.Add(pontoColetaNovo);
+            _pontoColetaRepository.Add(pontoColetaNovo, pontoColeta.IdMateriais);
 
         }
 
