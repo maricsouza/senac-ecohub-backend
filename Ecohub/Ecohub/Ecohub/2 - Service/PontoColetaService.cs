@@ -9,9 +9,12 @@ namespace Ecohub.Service
     public class PontoColetaService : IPontoColetaService
     {
         private readonly IPontoColetaRepository _pontoColetaRepository;
+        private readonly IMaterialPontoDeColetaRepository _materialPontoDeColetaRepository;
 
-        public PontoColetaService(IPontoColetaRepository pontoColetaRepository)
+        public PontoColetaService(IPontoColetaRepository pontoColetaRepository,
+                                  IMaterialPontoDeColetaRepository materialPontoDeColetaRepository)
         {
+            _materialPontoDeColetaRepository = materialPontoDeColetaRepository;
             _pontoColetaRepository = pontoColetaRepository ?? throw new ArgumentException();
         }
 
@@ -30,13 +33,30 @@ namespace Ecohub.Service
                pontoColeta.UsuarioId
                );
 
-            _pontoColetaRepository.Add(pontoColetaNovo, pontoColeta.IdMateriais);
+            var idAdicionado = _pontoColetaRepository.Add(pontoColetaNovo);
+
+            for( int i = 0; i < pontoColeta.IdMateriais.Count; i++ )
+            {
+                _materialPontoDeColetaRepository.Add(new MaterialPontoDeColetaEntidade()
+                {
+                    PontoDeColetaId = idAdicionado,
+                    MaterialId = pontoColeta.IdMateriais[i]
+                });
+            }
 
         }
 
         public void Delete(string pontoColetaId)
         {
             var pontoColetaDelete = Get(pontoColetaId);
+
+            // DELETAR MATERIAIS
+            var materiais = _materialPontoDeColetaRepository.GetAllById(pontoColetaId);
+            for( int i = 0; i < materiais.Count; i++ )
+            {
+                _materialPontoDeColetaRepository.Delete(materiais[i]);
+            }
+
             _pontoColetaRepository.Delete(pontoColetaDelete.Result);
         }
 

@@ -5,7 +5,7 @@ namespace Ecohub.Repository.Interfaces
 {
     public interface IPontoColetaRepository
     {
-        void Add(PontoDeColetaEntidade pontoColeta, List<int> materiais);
+        string Add(PontoDeColetaEntidade pontoColeta);
         Task<List<PontoDeColetaEntidade>> GetAll();
         Task<PontoDeColetaEntidade> Get(string pontoColetaId);
         void Update(PontoDeColetaEntidade pontoColeta);

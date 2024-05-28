@@ -25,7 +25,7 @@ builder.Services.AddTransient<IMaterialRepository, MaterialRepository>();
 builder.Services.AddTransient<IMaterialService, MaterialService>();
 builder.Services.AddTransient<IPontoColetaRepository, PontoColetaRepository>();
 builder.Services.AddTransient<IPontoColetaService, PontoColetaService>();
-
+builder.Services.AddTransient<IMaterialPontoDeColetaRepository, MaterialPontoDeColetaRepository>();
 
 
 var app = builder.Build();
