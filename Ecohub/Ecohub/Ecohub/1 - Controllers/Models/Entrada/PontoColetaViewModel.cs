@@ -30,6 +30,9 @@ namespace Ecohub._1___Controllers.Models.Entrada
 
         [Required(ErrorMessage = "O identificador do usuário é obrigatório")]
         public string UsuarioId { get; set; }
+
+        [Required(ErrorMessage ="O ponto de coleta deve ter, ao menos, um material correlacionado a ele")]
+        public List<int> IdMateriais { get; set; }
     }
 
 }
