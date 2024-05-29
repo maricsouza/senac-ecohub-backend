@@ -1,14 +1,18 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecohub.Repository.Entidades
 {
-    [Table("PONTO_DE_COLETA_MATERIAIS")]
+    [Table("MATERIAIS_PONTOS_DE_COLETA")]
     public class MaterialPontoDeColetaEntidade
     {
-        [Column("PONTO_COLETA_ID")]
+        [Key]
+        public int Id { get; set; }
+
+        [Column("PONTO_DE_COLETA_ID")]
         public string PontoDeColetaId { get; set; }
 
         [Column("MATERIAL_ID")]
-        public int MeterialId { get; set; }
+        public int MaterialId { get; set; }
     }
 }
