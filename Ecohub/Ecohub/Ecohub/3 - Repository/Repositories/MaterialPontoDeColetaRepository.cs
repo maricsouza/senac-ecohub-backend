@@ -23,10 +23,9 @@ namespace Ecohub._3___Repository.Repositories
 
         public MaterialPontoDeColetaEntidade GetOneById(string idPonto, int idMaterial)
         {
-            var response = _context.MateriaisPontoDeColeta.Where(c => c.MaterialId.Equals(idMaterial)).ToList();
-            var resp = response.Where(a => a.PontoDeColetaId.Equals(idPonto)).First();
+            var response = _context.MateriaisPontoDeColeta.Where(ponto => ponto.PontoDeColetaId == idPonto && ponto.MaterialId == idMaterial).FirstOrDefault();
 
-            return resp;
+            return response;
         }
 
         public void Delete(MaterialPontoDeColetaEntidade materialPontoDeColeta)
