@@ -1,13 +1,18 @@
-﻿using Ecohub.Controllers.Models.Entrada;
+﻿using Ecohub._1___Controllers.Models.Entrada;
+using Ecohub._2___Service;
+using Ecohub.Controllers.Models.Entrada;
 using Ecohub.Repository.Entidades;
 using Ecohub.Repository.Interfaces;
 using Ecohub.Service.Interfaces;
+using SecureIdentity.Password;
+
 
 namespace Ecohub.Service
 {
     public class UsuarioService : IUsuarioService
     {
         private readonly IUsuarioRepository _usuarioRepository;
+        private readonly TokenService _tokenService = new TokenService();
 
         public UsuarioService(IUsuarioRepository usuarioRepository)
         {
@@ -47,7 +52,12 @@ namespace Ecohub.Service
                 throw new Exception("O usuário precisa ser maior de idade");
             }
 
-            var userAdd = new UsuarioEntidade(user.Nome, user.CPF, user.DataNascimento, user.Email, user.Senha);
+            var userAdd = new UsuarioEntidade(
+                user.Nome, 
+                user.CPF, 
+                user.DataNascimento, 
+                user.Email,
+                PasswordHasher.Hash(user.Senha));
 
             _usuarioRepository.Add(userAdd);
         }
@@ -72,6 +82,20 @@ namespace Ecohub.Service
         public void Deletar(string userId)
         {
             _usuarioRepository.Delete(userId);
+        }
+
+        public async Task<string> Login(LoginViewModel login)
+        {
+           
+            var user = await _usuarioRepository.Login(login);
+
+
+            if (PasswordHasher.Verify(user.Senha, login.senha))
+                return _tokenService.GenerateToken(user);
+          
+
+                return "";
+
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace Ecohub.Repository.Entidades
 {
@@ -26,6 +26,7 @@ namespace Ecohub.Repository.Entidades
 
         [Column("SENHA")]
         public string Senha { get; set; }
+
 
         public UsuarioEntidade(string nome, string cPF, DateTime dataNascimento, string email, string senha)
         {
