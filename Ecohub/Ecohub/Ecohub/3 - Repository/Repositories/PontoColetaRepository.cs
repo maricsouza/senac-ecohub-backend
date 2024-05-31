@@ -1,4 +1,6 @@
-﻿using Ecohub.Infra.Context;
+﻿using Ecohub._3___Repository.Interfaces;
+using Ecohub._3___Repository.Repositories;
+using Ecohub.Infra.Context;
 using Ecohub.Repository.Entidades;
 using Ecohub.Repository.Interfaces;
 
@@ -8,14 +10,20 @@ namespace Ecohub.Repository.Repositories
     {
         private readonly AppDbContext _context = new AppDbContext();
 
-        public void Add(PontoDeColetaEntidade pontoColeta)
+
+        public string Add(PontoDeColetaEntidade pontoColeta)
         {
-           _context.Add(pontoColeta);
-           _context.SaveChanges();
+           var response = _context.Add(pontoColeta);
+
+            _context.SaveChanges();
+
+            return response.Entity.Id;
+
         }
 
         public void Delete(PontoDeColetaEntidade pontoColeta)
         {
+
             _context.PontoColeta.Remove(pontoColeta);
             _context.SaveChanges();
         }

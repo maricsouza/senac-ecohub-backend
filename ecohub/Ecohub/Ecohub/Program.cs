@@ -51,6 +51,7 @@ builder.Services.AddAuthentication(x =>
             ValidateIssuer = false
         };
     });
+builder.Services.AddTransient<IMaterialPontoDeColetaRepository, MaterialPontoDeColetaRepository>();
 
 //Configuração do Swagger para adicionar o Bearer Token na auth
 builder.Services.AddSwaggerGen(c =>
