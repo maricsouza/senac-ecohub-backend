@@ -27,12 +27,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Injeção de dependência
 builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddTransient<IUsuarioService, UsuarioService>();
 builder.Services.AddTransient<IMaterialRepository, MaterialRepository>();
 builder.Services.AddTransient<IMaterialService, MaterialService>();
 builder.Services.AddTransient<IPontoColetaRepository, PontoColetaRepository>();
 builder.Services.AddTransient<IPontoColetaService, PontoColetaService>();
+builder.Services.AddTransient<IMaterialPontoDeColetaRepository, MaterialPontoDeColetaRepository>();
 builder.Services.AddTransient<TokenService>();
 
 //JWTConfig
@@ -51,7 +53,6 @@ builder.Services.AddAuthentication(x =>
             ValidateIssuer = false
         };
     });
-builder.Services.AddTransient<IMaterialPontoDeColetaRepository, MaterialPontoDeColetaRepository>();
 
 //Configuração do Swagger para adicionar o Bearer Token na auth
 builder.Services.AddSwaggerGen(c =>
