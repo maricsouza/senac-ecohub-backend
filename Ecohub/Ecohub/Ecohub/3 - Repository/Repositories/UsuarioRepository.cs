@@ -1,4 +1,5 @@
-﻿using Ecohub.Controllers.Models.Entrada;
+﻿using Ecohub._1___Controllers.Models.Entrada;
+using Ecohub.Controllers.Models.Entrada;
 using Ecohub.Infra.Context;
 using Ecohub.Repository.Entidades;
 using Ecohub.Repository.Interfaces;
@@ -46,6 +47,15 @@ namespace Ecohub.Repository.Repositories
             _context.SaveChanges();
         }
 
+        public async Task<UsuarioEntidade> Login(LoginViewModel login)
+        {
 
+            var userLogin = await _context.Usuarios
+                .AsNoTracking()
+                .FirstOrDefaultAsync(x => x.Email == login.Email);
+
+            return userLogin;
+
+        }
     }
 }
