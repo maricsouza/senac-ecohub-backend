@@ -21,37 +21,70 @@ namespace Ecohub._1___Controllers
         [HttpPost]
         public IActionResult AdicionarPontoColeta(PontoColetaViewModel ponto)
         {
-            _pontoColetaService.Add(ponto);
-            return Ok();
+            try
+            {
+                _pontoColetaService.Add(ponto);
+                return Ok();
+
+            } catch (Exception ex)
+            {
+                throw new Exception (ex.Message);
+            }
 
         }
         [HttpGet("/buscarPontosColeta")]
         public async Task<IActionResult> BuscarPontosColeta()
         {
-            var todosPontos = await _pontoColetaService.GetAll();
-            return Ok(todosPontos);
+            try
+            {
+                var todosPontos = await _pontoColetaService.GetAll();
+                return Ok(todosPontos);
+
+            } catch (Exception ex)
+            {
+                throw new Exception (ex.Message);
+            }
         }
 
         [HttpGet]
         public async Task<IActionResult> BuscarPontoColeta(string pontoId)
         {
-            var ponto = await _pontoColetaService.Get(pontoId);
-            return Ok(ponto);
+            try
+            {
+                var ponto = await _pontoColetaService.Get(pontoId);
+                return Ok(ponto);
+
+            } catch (Exception ex)
+            {
+                throw new Exception (ex.Message);
+            }
         }
 
         [HttpPut]
         public IActionResult EditarPontoColeta(PontoColetaViewModel ponto, string pontoId)
         {
-            _pontoColetaService.Update(ponto, pontoId);
-            return Ok();
+            try
+            {
+                _pontoColetaService.Update(ponto, pontoId);
+                return Ok();
+
+            } catch(Exception ex)
+            {
+                throw new Exception (ex.Message);
+            }
         }
 
         [HttpDelete]
         public IActionResult DeltarPontoColeta(string pontoId)
         {
-
-            _pontoColetaService.Delete(pontoId);
-            return Ok();
+            try
+            {
+                _pontoColetaService.Delete(pontoId);
+                return Ok();
+            } catch (Exception ex)
+            {
+                throw new Exception (ex.Message);
+            }
 
         }
 

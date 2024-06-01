@@ -21,9 +21,18 @@ namespace Ecohub.Controllers
         [HttpPost]
         public IActionResult AdicionarUsuario(UsuarioViewModel user)
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            _usuarioService.Adicionar(user);
-            return Ok();
+            try
+            {
+                _usuarioService.Adicionar(user);
+                return Ok();
+
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
         }
 
         [AllowAnonymous]
@@ -48,31 +57,66 @@ namespace Ecohub.Controllers
 
         [HttpGet("/buscarUsuarios")]
         public async Task<IActionResult> BuscarUsuarios()
-        {          
-            var users = await _usuarioService.BuscarTodos();
-            return Ok(users);
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            try
+            {
+                var users = await _usuarioService.BuscarTodos();
+                return Ok(users);
+
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         [HttpGet]
         public async Task<IActionResult> BuscarUsuario(string userId)
         {
-            var user = await _usuarioService.Buscar(userId);
-            return Ok(user);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            try
+            {
+                var user = await _usuarioService.Buscar(userId);
+                return Ok(user);
+
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         [HttpPut]
         public IActionResult EditarUsuario(UsuarioViewModel user, string userId)
         {
-            _usuarioService.Atualizar(user, userId);
-            return Ok();
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            try
+            {
+                _usuarioService.Atualizar(user, userId);
+                return Ok();
+
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         [HttpDelete]
-        public IActionResult DeltarUsuario(string userId) {
+        public IActionResult DeltarUsuario(string userId) 
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
 
-           _usuarioService.Deletar(userId);
-            return Ok();
-            
+            try
+            {
+                _usuarioService.Deletar(userId);
+                return Ok();
+
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
 
