@@ -18,6 +18,8 @@ namespace Ecohub.Controllers
         [HttpPost]
         public IActionResult AdicionarMaterial(MaterialViewModel material)
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
             try
             {
                 var response = _materialService.Adicionar(material);
@@ -33,6 +35,8 @@ namespace Ecohub.Controllers
         [HttpGet("/buscarMateriais")]
         public async Task<IActionResult> BuscarMateriais()
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
             try
             {
                 var materiais = await _materialService.BuscarTodos();
@@ -48,6 +52,8 @@ namespace Ecohub.Controllers
         [HttpGet]
         public async Task<IActionResult> BuscarMaterial(int materialId)
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
             try
             {
                 var material = await _materialService.Buscar(materialId);
@@ -64,6 +70,8 @@ namespace Ecohub.Controllers
         [HttpPut]
         public IActionResult EditarMaterial(MaterialViewModel material, int materialId)
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
             try
             {
                 _materialService.Atualizar(material, materialId);
@@ -78,6 +86,8 @@ namespace Ecohub.Controllers
         [HttpDelete]
         public IActionResult DeletarMaterial (int materialId)
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
             try
             {
                 _materialService.Deletar(materialId);
