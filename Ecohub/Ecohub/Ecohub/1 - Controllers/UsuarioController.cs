@@ -18,6 +18,8 @@ namespace Ecohub.Controllers
             _usuarioService = usuarioService ?? throw new ArgumentException();
         }
 
+
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult AdicionarUsuario(UsuarioViewModel user)
         {
@@ -55,6 +57,8 @@ namespace Ecohub.Controllers
             }
         }
 
+
+        [AllowAnonymous]
         [HttpGet("/buscarUsuarios")]
         public async Task<IActionResult> BuscarUsuarios()
         {

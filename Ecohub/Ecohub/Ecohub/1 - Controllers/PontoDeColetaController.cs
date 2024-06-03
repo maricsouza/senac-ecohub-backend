@@ -3,6 +3,7 @@ using Ecohub.Controllers.Models.Entrada;
 using Ecohub.Repository.Interfaces;
 using Ecohub.Service;
 using Ecohub.Service.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ecohub._1___Controllers
@@ -32,6 +33,7 @@ namespace Ecohub._1___Controllers
             }
 
         }
+        [AllowAnonymous]
         [HttpGet("/buscarPontosColeta")]
         public async Task<IActionResult> BuscarPontosColeta()
         {
@@ -46,6 +48,8 @@ namespace Ecohub._1___Controllers
             }
         }
 
+
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> BuscarPontoColeta(string pontoId)
         {

@@ -27,7 +27,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//Injeção de dependência
+//InjeÃ§Ã£o de dependÃªncia
 builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddTransient<IUsuarioService, UsuarioService>();
 builder.Services.AddTransient<IMaterialRepository, MaterialRepository>();
@@ -54,7 +54,7 @@ builder.Services.AddAuthentication(x =>
         };
     });
 
-//Configuração do Swagger para adicionar o Bearer Token na auth
+//ConfiguraÃ§Ã£o do Swagger para adicionar o Bearer Token na auth
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "JWTAuthAuthentication", Version = "v1" });
@@ -93,6 +93,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(builder => builder
+     .AllowAnyOrigin()
+     .AllowAnyMethod()
+     .AllowAnyHeader()
+);
 
 app.UseAuthorization();
 
