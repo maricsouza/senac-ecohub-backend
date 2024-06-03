@@ -15,7 +15,7 @@ namespace Ecohub.Controllers.Models.Entrada
 
         [Required(ErrorMessage ="A data de nascimento é obrigatória.")]
         // AGE VALIDATOR
-        public DateOnly DataNascimento { get; set; }
+        public DateTime DataNascimento { get; set; }
 
         [Required(ErrorMessage ="O e-mail é obrigatório.")]
         [EmailAddress(ErrorMessage ="E-mail inválido, por favor inserir um e-mail válido.")]
