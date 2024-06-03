@@ -64,6 +64,22 @@ namespace Ecohub._1___Controllers
             }
         }
 
+        [AllowAnonymous]
+        [HttpGet("/buscarPorUsuario")]
+        public async Task<IActionResult> BuscarPontoColetaUsuario(string usuarioId)
+        {
+            try
+            {
+                var ponto = await _pontoColetaService.GetPontoByUser(usuarioId);
+                return Ok(ponto);
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         [HttpPut]
         public IActionResult EditarPontoColeta(PontoColetaViewModel ponto, string pontoId)
         {

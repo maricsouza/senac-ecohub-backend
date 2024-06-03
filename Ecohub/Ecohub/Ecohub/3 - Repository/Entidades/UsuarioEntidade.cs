@@ -19,7 +19,7 @@ namespace Ecohub.Repository.Entidades
         public string CPF { get; set; }
 
         [Column("DATA_NASCIMENTO")]
-        public DateTime DataNascimento { get; set; }
+        public DateOnly DataNascimento { get; set; }
 
         [Column("EMAIL")]
         public string Email { get; set; }
@@ -28,7 +28,7 @@ namespace Ecohub.Repository.Entidades
         public string Senha { get; set; }
 
 
-        public UsuarioEntidade(string nome, string cPF, DateTime dataNascimento, string email, string senha)
+        public UsuarioEntidade(string nome, string cPF, DateOnly dataNascimento, string email, string senha)
         {
             Id = Guid.NewGuid().ToString();
             Nome = nome;
@@ -38,7 +38,7 @@ namespace Ecohub.Repository.Entidades
             Senha = senha;
         }
 
-        public UsuarioEntidade(string id, string nome, string cPF, DateTime dataNascimento, string email, string senha)
+        public UsuarioEntidade(string id, string nome, string cPF, DateOnly dataNascimento, string email, string senha)
         {
             Id = id;
             Nome = nome;

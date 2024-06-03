@@ -23,6 +23,13 @@ namespace Ecohub._1___Controllers.Models.Entrada
 
         [Required(ErrorMessage = "O estado é obrigatório")]
         public string Estado { get; set; }
+
+        [Required(ErrorMessage = "A latitude é obrigatória")]
+        public string Latitude { get; set; }
+
+        [Required(ErrorMessage = "A longitude é obrigatória")]
+        public string Longitude { get; set; }
+
         public string? PontoReferencia { get; set; }
 
         [Required(ErrorMessage = "O CEP é obrigatório")]
