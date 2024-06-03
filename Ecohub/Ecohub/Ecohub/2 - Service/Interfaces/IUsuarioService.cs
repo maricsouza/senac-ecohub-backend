@@ -1,4 +1,5 @@
 ﻿using Ecohub._1___Controllers.Models.Entrada;
+using Ecohub._1___Controllers.Models.Retorno;
 using Ecohub.Controllers.Models.Entrada;
 using Ecohub.Repository.Entidades;
 
@@ -11,6 +12,6 @@ namespace Ecohub.Service.Interfaces
         Task<UsuarioEntidade> Buscar(string userId);
         void Atualizar(UsuarioViewModel user, string userId);
         void Deletar(string userId);
-        Task<string> Login(LoginViewModel login);
+        Task<LoginResponse> Login(LoginViewModel login);
     }
 }
