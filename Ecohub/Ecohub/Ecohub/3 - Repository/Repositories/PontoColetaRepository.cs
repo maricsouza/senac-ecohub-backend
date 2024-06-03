@@ -13,7 +13,7 @@ namespace Ecohub.Repository.Repositories
 
         public string Add(PontoDeColetaEntidade pontoColeta)
         {
-           var response = _context.Add(pontoColeta);
+           var response = _context.PontoColeta.Add(pontoColeta);
 
             _context.SaveChanges();
 
@@ -38,6 +38,12 @@ namespace Ecohub.Repository.Repositories
         public async Task<List<PontoDeColetaEntidade>> GetAll()
         {
             var pontosColeta =  _context.PontoColeta.ToList();
+            return pontosColeta;
+        }
+
+        public List<PontoDeColetaEntidade> GetAllByIdUser(string idUsuario)
+        {
+            var pontosColeta = _context.PontoColeta.Where(c => c.UsuarioId == idUsuario).ToList();
             return pontosColeta;
         }
 

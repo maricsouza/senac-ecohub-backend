@@ -32,6 +32,12 @@ namespace Ecohub.Repository.Entidades
         [Column("PONTO_DE_REFERENCIA")]
         public string? PontoReferencia { get; set; }
 
+        [Column("LATITUDE")]
+        public string Latitude { get; set; }
+
+        [Column("LONGITUDE")]
+        public string Longitude { get; set; }
+
         [Column("CEP")]
         public string CEP { get; set; }
 
@@ -39,7 +45,23 @@ namespace Ecohub.Repository.Entidades
         [ForeignKey("USUARIO_ID")]
         public string UsuarioId { get; set; }
 
-        public PontoDeColetaEntidade(string id, string nome, string? email , string imagem, string numero, string cidade, string estado, string? pontoReferencia, string cEP, string usuarioId)
+        public PontoDeColetaEntidade(string nome, string? email, string imagem, string numero, string cidade, string estado, string? pontoReferencia, string cEP, string usuarioId, string latitude, string longitude)
+        {
+            Id = Guid.NewGuid().ToString();
+            Nome = nome;
+            Email = email;
+            Imagem = imagem;
+            Numero = numero;
+            Cidade = cidade;
+            Longitude = longitude;
+            Latitude = latitude;
+            Estado = estado;
+            PontoReferencia = pontoReferencia;
+            CEP = cEP;
+            UsuarioId = usuarioId;
+        }
+
+        public PontoDeColetaEntidade(string id, string nome, string? email, string imagem, string numero, string cidade, string estado, string? pontoReferencia, string cEP, string usuarioId, string latitude, string longitude)
         {
             Id = id;
             Nome = nome;
@@ -48,20 +70,8 @@ namespace Ecohub.Repository.Entidades
             Numero = numero;
             Cidade = cidade;
             Estado = estado;
-            PontoReferencia = pontoReferencia;
-            CEP = cEP;
-            UsuarioId = usuarioId;
-        }
-
-        public PontoDeColetaEntidade(string nome, string? email, string imagem, string numero, string cidade, string estado, string? pontoReferencia, string cEP, string usuarioId)
-        {
-            Id = Guid.NewGuid().ToString();
-            Nome = nome;
-            Email = email;
-            Imagem = imagem;
-            Numero = numero;
-            Cidade = cidade;
-            Estado = estado;
+            Longitude = longitude;
+            Latitude = latitude;
             PontoReferencia = pontoReferencia;
             CEP = cEP;
             UsuarioId = usuarioId;

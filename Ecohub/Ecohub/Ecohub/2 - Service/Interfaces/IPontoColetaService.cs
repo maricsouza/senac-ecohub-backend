@@ -9,6 +9,7 @@ namespace Ecohub.Service.Interfaces
         void Add(PontoColetaViewModel pontoColeta);
          Task<List<PontoDeColetaResponse>> GetAll();
         Task<PontoDeColetaResponse> Get(string pontoColetaId);
+        Task<List<PontoDeColetaResponse>> GetPontoByUser(string usuarioId);
         void Update(PontoColetaViewModel pontoColeta, string pontoColetaId);
         void Delete(string pontoColetaId);
     }

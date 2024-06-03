@@ -45,7 +45,7 @@ namespace Ecohub.Controllers
             try
             {
                 var token = _usuarioService.Login(login).Result;
-                if(token == "")
+                if(token == null)
                   return StatusCode(401, "Senha ou usuario invalido");
 
                 return Ok(token);
@@ -73,6 +73,7 @@ namespace Ecohub.Controllers
             }
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> BuscarUsuario(string userId)
         {
