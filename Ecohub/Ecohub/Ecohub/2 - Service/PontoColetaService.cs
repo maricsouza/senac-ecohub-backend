@@ -24,6 +24,7 @@ namespace Ecohub.Service
 
         public void Add(PontoColetaViewModel pontoColeta)
         {
+            byte[] ímagemBase64 = Convert.FromBase64String(pontoColeta.Imagem);
 
             var pontoColetaNovo = new PontoDeColetaEntidade(
                pontoColeta.Nome,
@@ -33,7 +34,7 @@ namespace Ecohub.Service
                pontoColeta.Estado,
                pontoColeta.PontoReferencia,
                pontoColeta.CEP,
-               pontoColeta.Imagem,
+               ímagemBase64,
                pontoColeta.UsuarioId
                );
 
