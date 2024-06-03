@@ -18,6 +18,7 @@ namespace Ecohub.Controllers
             _usuarioService = usuarioService ?? throw new ArgumentException();
         }
 
+
         [AllowAnonymous]
         [HttpPost]
         public IActionResult AdicionarUsuario(UsuarioViewModel user)
@@ -55,6 +56,7 @@ namespace Ecohub.Controllers
                 return StatusCode(500, "Internal error");
             }
         }
+
 
         [AllowAnonymous]
         [HttpGet("/buscarUsuarios")]

@@ -33,7 +33,6 @@ namespace Ecohub._1___Controllers
             }
 
         }
-
         [AllowAnonymous]
         [HttpGet("/buscarPontosColeta")]
         public async Task<IActionResult> BuscarPontosColeta()
@@ -48,6 +47,7 @@ namespace Ecohub._1___Controllers
                 throw new Exception (ex.Message);
             }
         }
+
 
         [AllowAnonymous]
         [HttpGet]
