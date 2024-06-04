@@ -28,12 +28,12 @@ namespace Ecohub.Service
             var pontoColetaNovo = new PontoDeColetaEntidade(
                pontoColeta.Nome,
                pontoColeta.Email,
+               pontoColeta.Imagem,
                pontoColeta.Numero,
                pontoColeta.Cidade,
                pontoColeta.Estado,
                pontoColeta.PontoReferencia,
                pontoColeta.CEP,
-               pontoColeta.Imagem,
                pontoColeta.UsuarioId,
                pontoColeta.Latitude,
                pontoColeta.Longitude
