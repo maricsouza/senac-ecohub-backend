@@ -28,12 +28,12 @@ namespace Ecohub.Service
             var pontoColetaNovo = new PontoDeColetaEntidade(
                pontoColeta.Nome,
                pontoColeta.Email,
+               pontoColeta.Imagem,
                pontoColeta.Numero,
                pontoColeta.Cidade,
                pontoColeta.Estado,
                pontoColeta.PontoReferencia,
                pontoColeta.CEP,
-               pontoColeta.Imagem,
                pontoColeta.UsuarioId,
                pontoColeta.Latitude,
                pontoColeta.Longitude
@@ -224,13 +224,13 @@ namespace Ecohub.Service
                 pontoColeta.Numero,
                 pontoColeta.Cidade,
                 pontoColeta.Estado,
-                pontoColeta.Latitude,
-                pontoColeta.Longitude,
                 pontoColeta.PontoReferencia,
                 pontoColeta.CEP,
                 pontoColeta.Imagem,
-                pontoColeta.UsuarioId
-                );
+                pontoColeta.UsuarioId,
+                pontoColeta.Latitude,
+                pontoColeta.Longitude
+            );
 
             //TO DO :: DELETE MATERIAIS NÃO MAIS UTILIZADOS
 
