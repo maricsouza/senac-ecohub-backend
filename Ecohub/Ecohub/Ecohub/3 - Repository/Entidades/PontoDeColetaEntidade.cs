@@ -70,11 +70,11 @@ namespace Ecohub.Repository.Entidades
             Numero = numero;
             Cidade = cidade;
             Estado = estado;
-            Longitude = longitude;
-            Latitude = latitude;
             PontoReferencia = pontoReferencia;
             CEP = cEP;
             UsuarioId = usuarioId;
+            Longitude = longitude;
+            Latitude = latitude;
         }
     }
 }
